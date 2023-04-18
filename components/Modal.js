@@ -26,9 +26,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     modalView: {
+        minWidth:Dimensions.get('window').width -100,
         backgroundColor: '#fff',
         borderRadius: 4,
-        padding: 20,
+        padding: 0,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
