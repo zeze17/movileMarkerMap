@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { StyleSheet, Text, View, Dimensions, Modal,Button } from 'react-native';
+import { StyleSheet, Text, View, Dimensions,Button } from 'react-native';
 import Map from './components/Map';
 import Modal from './components/Modal';
 import Panel from './components/Panel';
