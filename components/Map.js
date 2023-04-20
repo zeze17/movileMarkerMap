@@ -21,7 +21,7 @@ export default ({ onLongPress, puntos, pointsFilter }) => {
 
 const styles = StyleSheet.create({
     map: {
-        width: Dimensions.get('window').width - 150,
+        width: Dimensions.get('window').width,
         height: Dimensions.get('window').height,
     },
 });
