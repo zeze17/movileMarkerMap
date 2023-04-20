@@ -8,15 +8,16 @@ import List from './components/List';
 
 export default function App() {
   const [puntos, setPuntos] = useState([])
-  const [puntosTem, setPuntoTemp] = useState({})
+  const [puntosTem, setPuntoTemp] = useState([])
   const [nombre, setNombre] = useState('')
   const [visibilityFilter, setVisibilityFilter] = useState('new_puntos')
   const [visibility, setVisibility] = useState(false)
   const [pointsFilter,setpointsFilter]=useState(true)
 
-  const togglePointsFilter=()=>setpointsFilter(!pointsFilter)
+  const togglePointsFilter=()=>setpointsFilter(pointsFilter)
 
   const handleLongPress = ({ nativeEvent }) => {
+    setVisibilityFilter('new_puntos')
     setPuntoTemp(nativeEvent.coordinate)
     setVisibility(true)
   }
@@ -38,6 +39,7 @@ export default function App() {
   }
 
   console.log(puntos)
+console.log(puntosTem)
 
   return (
     <View style={styles.container}>
